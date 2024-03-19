@@ -56,3 +56,7 @@ dev = [
 current_version = "0.1.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "version: v{old_version} -> v{new_version}"
+commit = true
+tag = true
+publish = true
+push = false
