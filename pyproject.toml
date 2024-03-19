@@ -55,6 +55,9 @@ dev = [
 [tool.bumpver]
 current_version = "0.2.1"
 version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "update version: v{old_version} -> v{new_version}"
+commit = true
+push = false
 
 [tool.setuptools.dynamic]
 version = {attr = "test_package.__version__"}
