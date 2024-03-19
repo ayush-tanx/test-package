@@ -33,11 +33,11 @@ classifiers = [
     'Programming Language :: Python :: 3.10',
     'Programming Language :: Python :: 3.11',
 ]
-keywords = ["tanx", "connector", "finance", "api", "wrapper", "python" ]
+keywords = ["connector", "finance", "api", "wrapper", "python" ]
 
 [project.urls]
-"Homepage" = "https://github.com/tanx-libs/tanx-connector-python"
-"Issues" = "https://github.com/tanx-libs/tanx-connector-python/issues"
+"Homepage" = "https://github.com/ayush-tanx/test-package"
+"Issues" = "https://github.com/ayush-tanx/test-package/issues"
 
 [project.optional-dependencies]
 dev = [
