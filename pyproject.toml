@@ -55,7 +55,7 @@ dev = [
 [tool.bumpver]
 current_version = "0.0.0"
 version_pattern = "MAJOR.MINOR.PATCH"
-files = ['test-package/__init__.py']
+files = ["test-package/__init__.py"]
 commit_message = "version: v{old_version} -> v{new_version}"
 commit = false
 tag = false
