@@ -54,10 +54,5 @@ dev = [
 
 [tool.bumpver]
 current_version = "0.1.0"
-files = ["src/mypackage/__init__.py"]
-parse = '''
-version = "{major}.{minor}.{patch}"
-'''
-serialize = '''
-version = "{major}.{minor}.{patch}"
-'''
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "version: v{old_version} -> v{new_version}"
