@@ -1,0 +1,53 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+dynamic = ["version"]
+name = "test-package-ayush"
+authors = [
+  { name="ayush-tanx" },
+]
+license = { file = "LICENSE" }
+description = "Testing out package deployment on PyPi"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests",
+    "web3",
+    "ecdsa",
+    "websockets",
+    "sympy",
+    "typing-extensions"
+]
+classifiers = [
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.6',
+    'Programming Language :: Python :: 3.7',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+]
+keywords = ["tanx", "connector", "finance", "api", "wrapper", "python" ]
+
+[project.urls]
+"Homepage" = "https://github.com/tanx-libs/tanx-connector-python"
+"Issues" = "https://github.com/tanx-libs/tanx-connector-python/issues"
+
+[project.optional-dependencies]
+dev = [
+    "eth-tester",
+    "pytest",
+    "pytest-mock",
+    "responses",
+    "pip-tools",
+    "bumpver",
+    "build",
+    "twine",
+    "python-dotenv"
+]
