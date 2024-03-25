@@ -53,11 +53,11 @@ dev = [
 ]
 
 [tool.bumpver]
-current_version = "0.2.3"
+current_version = "0.3.0"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "update version: v{old_version} -> v{new_version}"
-commit = true
-push = true
+commit = false
+push = false
 
 [tool.setuptools.dynamic]
 version = {attr = "test_package.__version__"}
@@ -66,3 +66,6 @@ version = {attr = "test_package.__version__"}
 "src/test_package/__init__.py" = [
     '^__version__ = "{version}"$',
 ]
+
+[tool.setuptools.package-data]
+"test_package" = ["*.json"]
