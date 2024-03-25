@@ -1,0 +1,13 @@
+requests>=2.22.0,<3.0.0
+web3>=6.0.0,<7.0.0
+ecdsa>=0.16.0
+websockets
+sympy
+typing-extensions>=4.3.0
+eth-tester
+pytest>=3.0.0
+responses>=0.23.1
+bumpver
+build
+twine>=3.7.1
+python-dotenv
