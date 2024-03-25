@@ -1,18 +1,17 @@
 name: Release
 
 on:
+  release:
+    types: [published]
   pull_request:
     types: [closed]
     branches:
       - main
-    # Only trigger on PRs labeled with "release"
     types:
       - labeled
     properties:
       labels:
         - release
-  release:
-    types: [published]
 
 jobs:
   build:
