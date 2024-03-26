@@ -1,7 +1,7 @@
 name: Test and Release
 
 on:
-  [push]
+  push:
   release:
     types: [published]
 
