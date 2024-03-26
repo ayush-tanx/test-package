@@ -1,13 +1,17 @@
 name: Release
 
 on:
+  workflow_run:
+    workflows: ["Python package"]
+    types: 
+      - completed
   release:
     types: [published]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ needs.main.result == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     
     steps:
     - name: Checkout code
@@ -24,7 +28,6 @@ jobs:
         python -m build
 
     - name: Publish to PyPI
-      if: ${{ needs.main.result == 'success' }}
       env:
         TWINE_USERNAME: __token__
         TWINE_PASSWORD: ${{secrets.PYPI_API_KEY}}
