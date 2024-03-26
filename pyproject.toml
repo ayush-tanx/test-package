@@ -58,6 +58,7 @@ version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "update version: v{old_version} -> v{new_version}"
 commit = true
 push = true
+tag = true
 
 [tool.setuptools.dynamic]
 version = {attr = "test_package.__version__"}
