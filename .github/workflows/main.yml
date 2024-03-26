@@ -1,10 +1,7 @@
 name: Python package
 
 on:
-  push:
-  release:
-    types: [published]
-
+  push
 
 jobs:
   build:
