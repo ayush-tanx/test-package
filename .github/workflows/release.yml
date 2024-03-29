@@ -30,7 +30,7 @@ jobs:
           pytest
 
   tests-main:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     strategy:
       matrix:
